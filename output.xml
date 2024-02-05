@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-05T16:19:32.725630" rpa="false" schemaversion="5">
+<suite id="s1" name="Excercise2" source="C:\Users\ls930499\PycharmProjects\Excercise2">
+<suite id="s1-s1" name="Test1" source="C:\Users\ls930499\PycharmProjects\Excercise2\test1.robot">
+<test id="s1-s1-t1" name="Test login" line="9">
+<kw name="Opening Zalando webpage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-05T16:19:33.093106" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-05T16:19:33.093106" elapsed="3.071333"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-05T16:19:36.164940" level="INFO">Opening url 'https://www.zalando.se/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-05T16:19:36.164439" elapsed="1.160169"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-02-05T16:19:37.325108" elapsed="0.000503"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>//h3[normalize-space()='Populära märken för kläder, skor &amp; accessoarer']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-05T16:19:37.325611" elapsed="1.084040"/>
+</kw>
+<tag>Opening Zalando Webpage</tag>
+<doc>Zalando webpage</doc>
+<status status="PASS" start="2024-02-05T16:19:33.092104" elapsed="5.318050"/>
+</kw>
+<status status="PASS" start="2024-02-05T16:19:33.091101" elapsed="5.324064"/>
+</test>
+<doc>Zalando login</doc>
+<status status="PASS" start="2024-02-05T16:19:32.758217" elapsed="5.658452"/>
+</suite>
+<status status="PASS" start="2024-02-05T16:19:32.727635" elapsed="5.690537"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Excercise2">Excercise2</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test1">Excercise2.Test1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
